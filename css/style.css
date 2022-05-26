@@ -24,6 +24,18 @@ ul,ol {
 img {
     display: block;
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
 .list {
     list-style: none;
     text-decoration: none;
@@ -31,6 +43,7 @@ img {
 .link {
     text-decoration: none;
 }
+
 /* ===============================================HEADER========================================== */
 
 .site_nav_logo_img {
@@ -41,9 +54,24 @@ img {
     line-height: 100%;
     letter-spacing: 3%;
     color: var(--main_text_color_theme_dark);
+    align-items: center;
+}
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo_web {
     color: var(--accent_color);
+}
+.site_nav_logo_img {
+    margin-right: 93px;
+    margin-top: 23px;
 }
 .menu_list_item {
     font-family: var(--main_font);
@@ -53,6 +81,9 @@ img {
     letter-spacing: 2%;
     color: var(--main_text_color_theme_dark);
 }
+.menu_list:not(:last-child) {
+    margin-right: 50px;
+}
 .menu_list_item:hover,
 .menu_list_item:focus {
     color: var(--accent_color);
@@ -60,16 +91,25 @@ img {
 .current_page {
     color: var(--accent_color);
 }
+.site_nav {
+    display: flex;
+}
+.site_nav_menu {
+    display: flex;
+    align-items: center;
+}
 .site_nav_contact {
         font-family: var(--main_font);
         font-size: 14px;
         font-weight: 500;
         line-height: 16px;
         letter-spacing: 0.02em;
-
 }
 .contact {
     color:  var(--secondary_text_color_theme-dark);
+}
+.phone {
+    margin-left: 50px;
 }
 .contact_footer {
         font-style: normal;
@@ -83,7 +123,17 @@ img {
     color: var(--accent_color);
 }
 .section_hero {
-    background-color: var(--main_text_color_theme_dark);}
+    background-color: rgba(47, 48, 58, 1);
+    height: 600px;
+}
+.hero_button {
+    background: var(--accent_color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px, 32px;
+    margin-top: 350px;
+    margin-left: 700px;
+}
 .title {
         font-family: var(--main_font);
         font-weight: 900;
@@ -93,7 +143,20 @@ img {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 1);
+        padding-left: 452px;
+        padding-top: 200px;
+        position: absolute;
     }
+.section_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+/* ==================================ABOUT================================== */
 .hang_title {
     font-weight: 700;
     font-size: 14px;
@@ -101,6 +164,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main_text_color_theme_dark);
+    padding-bottom: 26px;
 }
 .hang_description{
     font-style: normal;
@@ -109,17 +173,47 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    width: 270px;
+    /* height: 75px; */
 }
-.section_title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+.hang_list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
 }
+.hang_list_item {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+/* ====================================SERVISES======================================= */
+.servises_list{
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.servises_list_item{
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100%-90px)/3);
+}
+/* ======================================OUR TEAM===================================== */
 .team {
     background: #F5F4FA;
+}
+.team_list{
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.team_member_card{
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100%-120px)/4);
+    background-color: var(--main_text_color_theme_light);
+}
+.team_member_detail {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .team_member {
     font-style: normal;
@@ -128,17 +222,19 @@ img {
     line-height: 1.18px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .team_member_position {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.18x;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary_text_color_theme-dark);
+    padding-top: 10px;
 }
-/* ======================================PORTFOLIO NAVIGATION===================================== */
+/* =============================PORTFOLIO NAVIGATION================================= */
 .button_item {
     background-color: rgba(33, 150, 243, 1);
     font-family: var(--main_font);
@@ -150,6 +246,12 @@ img {
     line-height: 1.87x;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 8px;
+    margin-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
 }
 .button_item:hover,
 .button_item:focus {
@@ -158,6 +260,14 @@ img {
 }
 .button{
     color: var(--secondary_text_color_theme_light);
+}
+.button_item_list {
+    display: flex;
+    margin-left: -8px;
+    margin-top: -8px;
+    padding-left: 280px;
+    padding-bottom: 50px;
+    
 }
 .hero_button {
     font-family: var(--main_font)
@@ -193,12 +303,29 @@ img {
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.project_item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100%-90px)/3);
+    background-color: var(--main_text_color_theme_light);
+}
 /* ========================================FOOTER======================================== */
 .footer {
    background-color: rgba(47, 48, 58, 1);
+   height: 252px;
+   padding-top: 60px;
 }
 .logo_studio {
     color: var(--main_text_color_theme_light);
+}
+.site_nav_logo_img {
+    padding-bottom: 20px;
 }
 .address {
     font-family: var(--main_font);
@@ -208,7 +335,14 @@ img {
     letter-spacing: 1.71;
     font-style: normal;
     text-decoration: none;
+    padding-top: 20px;
+   
 }
 .detai_adress {
     color: var(--main_text_color_theme_light);
+    padding-top: 111px;
+}
+
+.address_detail {
+    margin-bottom: 9px;
 }
