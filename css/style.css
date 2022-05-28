@@ -34,7 +34,6 @@ img {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    
 }
 .list {
     list-style: none;
@@ -48,18 +47,18 @@ img {
 
 .site_nav_logo_img {
     font-family: var(--secondary_font); 
-    font-style: bold;
+    font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
     line-height: 100%;
-    letter-spacing: 3%;
     color: var(--main_text_color_theme_dark);
     align-items: center;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
+    border-bottom: 25px;
 }
 .header_container {
     display: flex;
@@ -69,17 +68,15 @@ img {
 .logo_web {
     color: var(--accent_color);
 }
-.site_nav_logo_img {
-    margin-right: 93px;
-    margin-top: 23px;
-}
 .menu_list_item {
     font-family: var(--main_font);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
-    letter-spacing: 2%;
     color: var(--main_text_color_theme_dark);
+    display:block;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 .menu_list:not(:last-child) {
     margin-right: 50px;
@@ -107,15 +104,13 @@ img {
 }
 .contact {
     color:  var(--secondary_text_color_theme-dark);
-}
-.phone {
     margin-left: 50px;
 }
 .contact_footer {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1,71;
+        /* line-height: 1,71; */
         letter-spacing: 0.03em;
 }
 .contact:hover,
@@ -124,15 +119,15 @@ img {
 }
 .section_hero {
     background-color: rgba(47, 48, 58, 1);
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 .hero_button {
     background: var(--accent_color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px, 32px;
-    margin-top: 350px;
-    margin-left: 700px;
+    margin-top: 30px;
 }
 .title {
         font-family: var(--main_font);
@@ -143,9 +138,7 @@ img {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 1);
-        padding-left: 452px;
-        padding-top: 200px;
-        position: absolute;
+        margin: 0 auto;
     }
 .section_title {
     font-style: normal;
@@ -157,6 +150,9 @@ img {
     margin-bottom: 50px;
 }
 /* ==================================ABOUT================================== */
+.hang {
+    padding-bottom: 0;
+}
 .hang_title {
     font-weight: 700;
     font-size: 14px;
@@ -164,7 +160,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main_text_color_theme_dark);
-    padding-bottom: 26px;
+    margin-bottom: 10px;
 }
 .hang_description{
     font-style: normal;
@@ -219,7 +215,7 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
@@ -232,7 +228,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary_text_color_theme-dark);
-    padding-top: 10px;
 }
 /* =============================PORTFOLIO NAVIGATION================================= */
 .button_item {
@@ -261,13 +256,14 @@ img {
 .button{
     color: var(--secondary_text_color_theme_light);
 }
-.button_item_list {
-    display: flex;
+.button_list {
     margin-left: -8px;
     margin-top: -8px;
-    padding-left: 280px;
-    padding-bottom: 50px;
-    
+}
+.button_item_list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
 }
 .hero_button {
     font-family: var(--main_font)
@@ -312,20 +308,26 @@ img {
 .project_item {
     margin-left: 30px;
     margin-top: 30px;
-    flex-basis: calc((100%-90px)/3);
+    flex-basis: 370px;
     background-color: var(--main_text_color_theme_light);
+}
+.project_detail {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
 }
 /* ========================================FOOTER======================================== */
 .footer {
    background-color: rgba(47, 48, 58, 1);
-   height: 252px;
    padding-top: 60px;
+   padding-bottom: 60px;
 }
 .logo_studio {
     color: var(--main_text_color_theme_light);
-}
-.site_nav_logo_img {
-    padding-bottom: 20px;
 }
 .address {
     font-family: var(--main_font);
@@ -335,8 +337,7 @@ img {
     letter-spacing: 1.71;
     font-style: normal;
     text-decoration: none;
-    padding-top: 20px;
-   
+    margin-top: 20px;
 }
 .detai_adress {
     color: var(--main_text_color_theme_light);
@@ -345,4 +346,7 @@ img {
 
 .address_detail {
     margin-bottom: 9px;
+}
+.contact_footer {
+margin-left: 0;
 }
