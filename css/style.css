@@ -104,8 +104,6 @@ img {
 }
 .contact {
     color:  var(--secondary_text_color_theme-dark);
-    margin-left: 50px;
-
 }
 .contact_footer {
         font-style: normal;
@@ -116,6 +114,9 @@ img {
 .contact:hover,
 .contact:focus {
     color: var(--accent_color);
+}
+.phone {
+    margin-left: 50px;
 }
 .section_hero {
     background-color: rgba(47, 48, 58, 1);
@@ -337,6 +338,8 @@ img {
     align-items: center;
     letter-spacing: 0.03em;
     margin-right: 93px;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 .logo_studio {
     color: var(--main_text_color_theme_light);
